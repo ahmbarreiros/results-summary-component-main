@@ -49,8 +49,8 @@ for(let i = 0; i < data.length; i++) {
     elementsArr[i].innerHTML = 
         `
         <span>
-            <img src=${data[i].icon} />
-            <p>${data[i].category}</p>
+            <img src=${data[i].icon} alt="icon for category ${data[i].category}"/>
+            ${data[i].category}
         </span>
         <p><span>${data[i].score}</span> / 100</p>
         `

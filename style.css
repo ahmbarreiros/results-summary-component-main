@@ -57,7 +57,7 @@ body {
     align-items: center;
 }
 
-.division > .result > h3 {
+.division > .result > h1 {
     color: var(--light-lavender);
     text-align: center;
     margin-top: 10px;
@@ -213,7 +213,7 @@ footer {
         padding-top: 20px;
         font-size: 54px;
     }
-    .division > .result > h3 {
+    .division > .result > h1 {
         margin-top: 0;
         margin-bottom: 0;
         font-size: 18px;
