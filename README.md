@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [](https://ahmbarreiros.github.io/results-summary-component-main/)
+- Solution URL: [Solution](https://ahmbarreiros.github.io/results-summary-component-main/)
 
 ## My process
 
@@ -166,4 +166,4 @@ In my next projects I will try to focus on mobile-first workflow and continue to
 
 - GitHub - [@ahmbarreiros](https://github.com/ahmbarreiros)
 - Frontend Mentor - [@ahmbarreiros](https://www.frontendmentor.io/profile/ahmbarreiros)
-- LinkedIn - [](https://www.linkedin.com/in/ant%C3%B4nio-henrique-0aa9a2242/)
+- LinkedIn - [@Antonio](https://www.linkedin.com/in/ant%C3%B4nio-henrique-0aa9a2242/)
