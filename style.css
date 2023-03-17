@@ -113,7 +113,7 @@ body {
     flex-direction: column;
 }
 
-.division > .summary > h3 {
+.division > .summary > h2 {
     color: var(--dark-gray-blue);
     text-align: left;
     font-size: 20px;
@@ -237,7 +237,7 @@ footer {
         border-bottom-right-radius: 0px;
     }
     
-    .division > .summary > h3 {
+    .division > .summary > h2 {
         font-size: 17px;
         margin-top: -12px;
         padding-bottom: 20px;
