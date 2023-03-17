@@ -12,7 +12,7 @@
     --green-teal: hsl(166, 100%, 37%);
     --cobalt-blue: hsl(234, 85%, 45%);
     --white: hsl(0, 0%, 100%);
-    --pale-blue: hsl(221, 100%, 96%);
+    --pale-blue: hsl(222, 100%, 96%);
     --light-lavender: hsl(241, 100%, 89%);
     --dark-gray-blue: hsl(224, 30%, 27%);
     /* background */
@@ -38,19 +38,20 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    
 }
 
 .division {
     display: flex;
     grid-template-columns: 1fr 1fr;
     flex-wrap: wrap;
+    box-shadow: -3px 15px 57px 5px var(--light-lavender);
+    border-radius: 40px;
 }
 
 .result {
     background: linear-gradient(180deg, var(--light-slate-blue) 0%, var(--light-royal-blue) 100%);
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 35px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -59,12 +60,14 @@ body {
 .division > .result > h3 {
     color: var(--light-lavender);
     text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+    margin-bottom: 0;
 }
 
 .division > .result > .score {
     text-align: center;
     background: linear-gradient(180deg, var(--violet-blue) 0%, var(--persian-blue) 100%);
-    /* padding: 80px; */
     margin: 30px;
     border-radius: 50%;
     height: 200px;
@@ -104,9 +107,8 @@ body {
 }
 
 .division > .summary {
-    border: 1px solid black;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 30px;
+    border-radius: 40px;
     display: flex;
     flex-direction: column;
 }
@@ -126,7 +128,7 @@ body {
     border-radius: 10px;
 }
 
-#red, #yellow, #green, #blue {
+#react, #memory, #verbal, #visual {
     background-color: hsl(0, 100%, 67%, 0.2);
     color: var(--light-red);
     display: flex;
@@ -136,35 +138,148 @@ body {
     align-items: center;
 }
 
-#red > span, #yellow > span, #green > span, #blue > span {
+#react > span, #memory > span, #verbal > span, #visual > span {
     display: flex;
 }
 
-#red > span > *, #yellow > span > *, #green > span > *, #blue > span > * {
+#react > span > *, #memory > span > *, #verbal > span > *, #visual > span > * {
     margin-left: 8px;
 }
 
-#red > p, #yellow > p, #green > p, #blue > p {
+#react > p, #memory > p, #verbal > p, #visual > p {
     margin-right: 8px;
     color: var(--dark-gray-blue)
 }
 
-#red > p > span, #yellow > p > span, #green > p > span, #blue > p > span {
+#react > p > span, #memory > p > span, #verbal > p > span, #visual > p > span {
     color: rgba(0, 0, 0, 0.9);
     font-weight: 700;
 }
 
-#yellow {
+#memory {
     background-color: hsla(39, 100%, 56%, 0.2);
     color: var(--orange-yellow);
 }
 
-#green {
+#verbal {
     background-color: hsl(166, 100%, 37%, 0.2);
     color: var(--green-teal);
 }
 
-#blue {
+#visual {
     background-color: hsla(234, 85%, 45%, 0.2);
     color: var(--cobalt-blue);
+}
+
+#continue-btn {
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+    background: hsl(224, 30%, 27%);
+    color: var(--white);
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+#continue-btn:hover {
+    background: linear-gradient(180deg, hsl(251, 86%, 53%), var(--light-royal-blue));
+}
+
+footer {
+    position: absolute;
+    bottom: 0%;
+    left: calc(100vw - 50%);
+    text-align: center;
+    transform: translateX(-50%);
+}
+
+@media (max-width: 620px) {
+    .division {
+        width: 100vw;
+    }
+    .result {
+        width: 100vw;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+    .division > .result > .score {
+        height: 130px;
+        width: 130px;
+        margin-bottom: 20px;
+        margin-top: 25px;
+    }
+    .division > .result > .score > .my-score {
+        padding-top: 20px;
+        font-size: 54px;
+    }
+    .division > .result > h3 {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 18px;
+    }
+    .division > .result > .result-text {
+        width: 300px;
+        height: 95px;
+    }
+
+    .division > .result > .result-text > #great {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+    
+    .division > .result > .result-text > #result-paragraph {
+        margin: 5px;
+    }
+
+    .division {
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    
+    .division > .summary > h3 {
+        font-size: 17px;
+        margin-top: -12px;
+        padding-bottom: 20px;
+    }
+    
+    .division > .summary > .points {
+        width: calc(100vw - 50px);
+        box-sizing: border-box;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+    
+    #react, #memory, #verbal, #visual {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    #react > span, #memory > span, #verbal > span, #visual > span {
+        font-size: 16px;
+    }
+    
+    #react > span > *, #memory > span > *, #verbal > span > *, #visual > span > * {
+        font-size: 16px;
+    }
+    
+    #react > p, #memory > p, #verbal > p, #visual > p {
+        font-size: 16px;
+    }
+    
+    #react > p > span, #memory > p > span, #verbal > p > span, #visual > p > span {
+        font-size: 16px;
+    }
+
+    #continue-btn {
+        margin-top: 5px;
+        cursor: pointer;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-radius: 40px;
+    }
+
+    footer {
+        margin-top: 30px;
+        position: relative;
+    }
 }
