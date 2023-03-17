@@ -196,6 +196,7 @@ footer {
 @media (max-width: 620px) {
     .division {
         width: 100vw;
+        height: 100vh;
     }
     .result {
         width: 100vw;
